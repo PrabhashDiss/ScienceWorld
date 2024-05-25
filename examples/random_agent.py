@@ -88,6 +88,7 @@ def randomModel(args):
 
             # Only valid actions
             validActions = env.getValidActionObjectCombinationsWithTemplates()
+            print("Valid action/object combinations: " + str(validActions))
             randomAction = random.choice(validActions)
             print("Next random action: " + str(randomAction))
             userInputStr = randomAction["action"]
